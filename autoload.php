@@ -9,6 +9,20 @@
 
 // Add deprecated constants
 // @deprecated 4.0
+$os = strtoupper(substr(PHP_OS, 0, 3));
+
+if (!defined('IS_WIN')) {
+    define('IS_WIN', ($os === 'WIN') ? true : false);
+}
+
+if (!defined('IS_UNIX')) {
+    define('IS_UNIX', (($os !== 'MAC') && ($os !== 'WIN')) ? true : false);
+}
+
+if (!defined('IS_MAC')) {
+    define('IS_MAC', (IS_UNIX === true && ($os === 'DAR' || $os === 'MAC')) ? true : false);
+}
+
 define('JPATH_ISWIN', IS_WIN);
 define('JPATH_ISMAC', IS_MAC);
 
