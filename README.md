@@ -19,7 +19,7 @@ Joomla Legacy can and should be installed by using [Composer](https://getcompose
 Go to the root directory of your Joomla Platform installation using the command line and execute following command:
 
 ```
-composer require joomlatools/joomla-platform-legacy:1.*
+composer require joomlatools/platform-legacy:1.*
 ```
 
 ## Contributing
