@@ -7,6 +7,10 @@
  * @link        https://github.com/joomlatools/joomlatools-platform-legacy for the canonical source repository
  */
 
+if (!defined('JOOMLATOOLS_PLATFORM')) {
+	return;
+}
+
 // Add deprecated constants
 // @deprecated 4.0
 $os = strtoupper(substr(PHP_OS, 0, 3));
