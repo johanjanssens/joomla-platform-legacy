@@ -197,7 +197,8 @@ abstract class JError
 		JLog::add('JError::raise() is deprecated.', JLog::WARNING, 'deprecated');
 
 		// Build error object
-		$exception = new JException($msg, $code, $level, $info, $backtrace);
+		$class     = $code == 404 ? 'JExceptionNotFound' : 'JException';
+		$exception = new $class($msg, $code, $level, $info, $backtrace);
 
 		return self::throwError($exception);
 	}

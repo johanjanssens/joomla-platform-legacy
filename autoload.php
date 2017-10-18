@@ -47,6 +47,7 @@ JLoader::register('JRules', __DIR__  . '/code/access/rules.php');
 JLoader::register('JCli', __DIR__  . '/code/application/cli.php');
 JLoader::register('JApplication', __DIR__  . '/code/application/application.php');
 JLoader::register('JError', __DIR__  . '/code/error/error.php');
+JLoader::register('JExceptionNotFound', __DIR__  . '/code/exception/notfound.php');
 
 // Set system error handling
 JError::setErrorHandling(E_NOTICE, 'message');
