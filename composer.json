@@ -1,6 +1,6 @@
 {
   "name": "joomlatools/platform-legacy",
-  "license": "GPLv3",
+  "license": "GPL-3.0-only",
   "description": "Legacy libraries for the Joomlatools Platform",
   "keywords": ["joomla", "library", "platform"],
   "homepage": "https://github.com/joomlatools/joomlatools-platform-legacy",
